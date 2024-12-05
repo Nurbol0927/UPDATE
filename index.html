@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое расписание</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Убей или будь убит</h1>
+        <p>времени мало</p>
+    </header>
+    <nav>
+        <button onclick="toggleDay('weekdays')">Пн-Пт</button>
+        <button onclick="toggleDay('saturday')">Суббота</button>
+        <button onclick="toggleDay('sunday')">Воскресенье</button>
+    </nav>
+    <main>
+        <section id="weekdays" class="schedule active">
+            <h2>Понедельник - Пятница</h2>
+            <ul>
+                <li><strong>07:00 - 07:15:</strong> Подъем, утренние процедуры.</li>
+                <li><strong>07:15 - 07:45:</strong> Завтрак.</li>
+                <li><strong>07:45 - 08:45:</strong> Практика английского.</li>
+                <li><strong>09:00 - 13:00:</strong> Изучение Java (теория, практика).</li>
+                <li><strong>14:00 - 17:00:</strong> Работа над проектами.</li>
+                <li><strong>18:00 - 20:00:</strong> Оффлайн-уроки Java.</li>
+                <li><strong>20:00 - 21:00:</strong> Онлайн-уроки английского (вт, чт, сб).</li>
+                <li><strong>21:00 - 22:00:</strong> Отдых.</li>
+            </ul>
+        </section>
+        <section id="saturday" class="schedule">
+            <h2>Суббота</h2>
+            <ul>
+                <li><strong>07:00 - 13:00:</strong> Изучение Java (сложные задачи).</li>
+                <li><strong>14:00 - 16:00:</strong> Интенсив по английскому.</li>
+                <li><strong>17:00 - 19:30:</strong> Практика Java.</li>
+                <li><strong>20:00 - 21:00:</strong> Онлайн-урок английского.</li>
+            </ul>
+        </section>
+        <section id="sunday" class="schedule">
+            <h2>Воскресенье</h2>
+            <p>Полный отдых: прогулки, хобби, фильмы.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Чтобы достигнуть своей мечты <br> надо сломать сотни чужих</p>
+        <div id="quote">Мотивация: "Если это мечта, почему ты её не выбрал? Они ноют в телеграмах, что культура их не выбрала 
+            <br> Надо работать так, как будто у тебя много кредитов и у тебя несколько месяцев, чтобы их закрыть."</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

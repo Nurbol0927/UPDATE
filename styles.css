@@ -1,0 +1,137 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #929292;
+    color: #000000;
+    box-sizing: border-box; /* Для предотвращения сдвигов из-за padding */
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background: #000000;
+    color: rgb(255, 0, 0);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background: #494242;
+    padding: 0.5rem;
+}
+
+nav button {
+    color: white;
+    background: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+nav button:hover {
+    background: #ff0000;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box; /* Для предотвращения сдвигов из-за padding */
+}
+
+.schedule {
+    display: none;
+}
+
+.schedule.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: #ffffff;
+}
+
+ul li {
+    background: rgb(0, 0, 0);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Для предотвращения сдвигов из-за padding */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #000000;
+    color: rgb(255, 0, 0);
+}
+
+#quote {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem; /* Уменьшаем padding для экранов до 768px */
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    nav button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    footer {
+        padding: 0.8rem;
+    }
+
+    ul li {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    footer {
+        padding: 0.6rem;
+    }
+
+    ul li {
+        padding: 0.6rem;
+    }
+
+    #quote {
+        font-size: 0.9rem;
+    }
+}
